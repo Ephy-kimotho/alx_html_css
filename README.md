@@ -8,7 +8,7 @@ This is a simple project that displays smile school landing page. In this projec
 ![Testimonial](./css_advanced/assets/testimonials.png)
 
 ## Tutorials Section
-![Tutorials](./css_advanced/assets/tutorials.png)
+![Tutorials](./css_advanced/assets/tutorials.jpg)
 
 ## Membership Section
 ![Membership](./css_advanced/assets/membership.png)
