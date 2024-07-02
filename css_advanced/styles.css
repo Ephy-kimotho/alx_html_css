@@ -1,0 +1,352 @@
+/* === GOOGLE FONT IMPORT === */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+/* === CUSTOM VARIABLES === */
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --purple: #C271FF;
+    --grey: #D8D8D8;
+    --blue: #071629;
+    --light-blue: #07162980;
+}
+
+/* === CSS PRESETS === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* === GENERAL STYLES === */
+body,
+html {
+    margin: 0;
+    font-family: "Source Sans", sans-serif;
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+    ;
+}
+
+ul {
+    list-style: none;
+}
+
+.btn {
+    border: none;
+    background-color: var(--purple);
+    color: var(--white);
+    padding: 13px 21px;
+    border-radius: 22px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    background-image: url(./assets/background-img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 180vh;
+}
+
+/* === HEADER STYLES === */
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1.125rem;
+}
+
+.nav__list {
+    display: flex;
+    gap: 50px;
+}
+
+.nav__list__link {
+    font-weight: 700;
+}
+
+/* === INRTO SECTION STYLES === */
+.introduction__text {
+    text-align: center;
+    margin-top: 160px;
+}
+
+.introduction__text h1 {
+    color: var(--white);
+    font-size: 120px;
+    margin-bottom: 24px;
+}
+
+.introduction__text span {
+    color: var(--white);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.introduction__text span+span {
+    margin-left: 57px;
+}
+
+.introduction__text button {
+    display: block;
+    margin-inline: auto;
+    margin-top: 38px;
+    margin-bottom: 100px;
+}
+
+.pros__title {
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 2rem;
+}
+
+.pros__title span {
+    color: var(--purple);
+}
+
+.pros-container {
+    display: flex;
+    gap: 130px;
+    justify-content: center;
+    text-align: center;
+    color: var(--white)
+}
+
+.pro h3 {
+    margin: 8px 0;
+}
+
+.pro p {
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.pro img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+/* === TESTIMONIALS SECTION STYLES === */
+.testimonials {
+    background-color: var(--purple);
+    padding: 70px 0px;
+    color: var(--white);
+    display: flex;
+    gap: 53px;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials__content {
+    max-width: 700px;
+}
+
+.testimonials__content blockquote {
+    font-size: 20px;
+    line-height: 1.25;
+}
+
+.testimonials__content h3 {
+    margin-top: 22px;
+    margin-bottom: 12px;
+    text-transform: capitalize;
+}
+
+.testimonials p {
+    font-style: italic;
+    font-size: 18px;
+}
+
+/* === TUTORIAL SECTION  STYLES === */
+.tutorials {
+    padding: 50px 100px;
+    margin-bottom: 37px;
+}
+
+.tutorials__title {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--blue);
+    font-weight: normal;
+    margin-bottom: 75px;
+}
+
+.tutorials__title>span {
+    color: var(--purple);
+    font-weight: bold;
+}
+
+.tutorials__container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tutorial {
+    width: 225px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.tutorial__img {
+    width: 100%;
+}
+
+.tutorial_playbtn {
+    position: absolute;
+    width: 64px;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.tutorial__title {
+    color: var(--blue);
+    margin-top: 18px;
+    margin-bottom: 7px;
+}
+
+.tutorial__text {
+    color: var(--light-blue);
+    line-height: 1.2;
+    margin-bottom: 13px;
+}
+
+.tutorial_author {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-bottom: 14px;
+}
+
+.tutorial_author img {
+    width: 35px;
+}
+
+.tutorial_author h4 {
+    color: var(--purple);
+    font-size: 14px;
+}
+
+.tutorial__rating {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.tutorial__rating p {
+    color: var(--purple);
+    font-weight: 600;
+}
+
+/* === MEMBERSHIP STYLES === */
+.membership {
+    padding: 50px 0;
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.membership__title {
+    color: var(--grey);
+    margin-bottom: 58px;
+}
+
+.membership__title span {
+    color: var(--purple);
+}
+
+.membership__container {
+    display: flex;
+    width: 80%;
+    color: var(--grey);
+    gap: 83px;
+}
+
+.membership__card {
+    text-align: center;
+}
+
+.membership__card h3 {
+    margin-top: 26px;
+    margin-bottom: 13px;
+}
+
+.membership__card p {
+    font-size: 14px;
+    line-height: 26px;
+    max-width: 90%;
+    margin-inline: auto;
+    margin-bottom: 80px;
+}
+
+/* === QUESTIONS SECTION STYLING === */
+.questions {
+    padding: 50px 0 70px;
+}
+
+.questions__title {
+    text-align: center;
+    color: var(--blue);
+    font-size: 60px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.questions__container {
+    width: 80%;
+    margin-inline: auto;
+    display: grid;
+    gap: 40px;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(2, 350px);
+}
+
+.question h3 {
+    color: var(--blue);
+    margin-bottom: 30px;
+}
+
+.question p {
+    color: var(--light-blue);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* === FOOTER STYLING === */
+.footer {
+    background-color: var(--blue);
+    padding: 30px 0;
+}
+
+.footer__info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-links {
+    color: var(--white);
+}
+
+.social-links i {
+    cursor: pointer;
+    margin-left: 18px;
+}
+
+.footer p {
+    margin-top: 20px;
+    text-align: center;
+    color: var(--grey);
+    opacity: 0.5;
+    font-size: 12px;
+}
