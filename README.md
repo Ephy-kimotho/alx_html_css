@@ -2,7 +2,7 @@
 This is a simple project that displays smile school landing page. In this project I have improved my css skills most importantly getting the layout right.
 
 ## Introduction 
-![Intro](./css_advanced/assets/main.png)
+![Intro](./css_advanced/assets/main.jpg)
 
 ## Testimonial Section
 ![Testimonial](./css_advanced/assets/testimonials.png)
