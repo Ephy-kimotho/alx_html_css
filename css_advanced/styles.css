@@ -44,15 +44,16 @@ ul {
     border-radius: 22px;
     font-weight: 600;
     cursor: pointer;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+}
+.btn:hover{
+    opacity: 0.85;
 }
 
 .container {
     background-image: url(./assets/background-img.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    height: 180vh;
+    background-size:100% 100%;
 }
 
 /* === HEADER STYLES === */
@@ -98,13 +99,16 @@ ul {
     display: block;
     margin-inline: auto;
     margin-top: 38px;
-    margin-bottom: 100px;
+}
+
+.pros{
+    padding-bottom: 60px;
 }
 
 .pros__title {
     color: var(--white);
     text-align: center;
-    margin-bottom: 100px;
+    margin-block:85px;
     font-size: 2rem;
 }
 
