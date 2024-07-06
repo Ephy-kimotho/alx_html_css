@@ -1,0 +1,402 @@
+/* ------------------------------- CUSTOM FONTS -------------------------------  */
+@font-face {
+    font-family: "source sans pro";
+    src: url(./assets/fonts/source-sans-pro/SourceSansPro-Semibold.otf);
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: "spincycle";
+    src: url(./assets/fonts/Spin-Cycle-OT/spincycle_ot.otf);
+}
+
+/* ------------------------------- CUSTOM VARIABLES -------------------------------  */
+:root {
+    /* ----- colors ----- */
+    --white: #ffffff;
+    --blue: #071629;
+    --pink: #ff6565;
+    --black: #000000;
+    --light-grey: #D8D8D8;
+    --dark-grey: #979797;
+
+    /* ----- font sizes ----- */
+    --fs-xs: 0.75rem;
+    --fs-sm: 0.875rem;
+    --fs-md: 1rem;
+    --fs-big: 1.125rem;
+    --fs-lrg: 2rem;
+    --fs-xl: 2.875rem;
+
+    /* ----- general ----- */
+    --gap: 18px;
+
+}
+
+/* ------------------------------- CSS PRESETS -------------------------------  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "source sans pro", sans-serif;
+}
+
+p {
+    line-height: 1.5;
+}
+
+nav ul {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ------------------------------- GENERAL RULES -------------------------------  */
+body {
+    position: relative;
+}
+
+main section:not(:first-of-type) {
+    padding: 50px 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header label,
+.header input {
+    display: none;
+}
+
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin-inline: auto;
+}
+
+.what-we-do__title,
+.contact-us__title {
+    color: var(--blue);
+}
+
+.what-we-do__text,
+.our-results__text {
+    max-width: 640px;
+    text-align: center;
+}
+
+.what-we-do__text,
+.our-results__text {
+    margin-inline: auto;
+}
+
+.btn {
+    border: none;
+    border-radius: 22px;
+    padding: 13px 31px;
+    color: var(--white);
+    background-color: var(--pink);
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: var(--fs-sm);
+}
+
+.btn:hover,
+.btn:active {
+    opacity: 0.9;
+}
+
+/* ------------------------------- HEADER RULES -------------------------------  */
+.header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: absolute;
+    top: 15px;
+    left: 10%;
+    right: 10%;
+}
+
+.header__logo {
+    width: 20%;
+}
+
+.header__nav__list {
+    --gap: 35px;
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+    font-size: var(--fs-xs);
+}
+
+.header__nav__list__link {
+    color: var(--white);
+    transition: color 500ms ease-in-out;
+}
+
+.header__nav__list__link:hover,
+.header__nav__list__link:active {
+    color: var(--pink);
+}
+
+
+/* ------------------------------- LEADING SECTION STYLES -------------------------------  */
+.leading {
+    min-height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/headphones_hero_1.jpg);
+    background-repeat: no-repeat;
+}
+
+.leading__content {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.leading__title {
+    margin-top: 1em;
+    font-size: var(--fs-lrg);
+}
+
+.leading__text {
+    font-weight: bold;
+    font-size: var(--fs-md);
+    max-width: 640px;
+}
+
+.leading button {
+    margin-top: 3em;
+    margin-bottom: 5em;
+    box-shadow: 0 4px 20px var(--black);
+}
+
+/* ------------------------------- WHAT WE DO SECTION STYLES -------------------------------  */
+.what-we-do__text {
+    color: var(--blue);
+    width: 80%;
+}
+
+.service-container {
+    display: flex;
+    margin-top: 80px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+.service-card {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.service-card img {
+    width: 30%;
+}
+
+.service-card:first-of-type img {
+    width: 35%;
+}
+
+.service-card h3 {
+    color: var(--blue);
+    font-size: var(--fs-big);
+    margin-top: 1.3em;
+    margin-bottom: 0.7em;
+}
+
+.service-card:first-of-type h3 {
+    margin-top: 2.4em;
+}
+
+.service-card:last-of-type h3 {
+    margin-top: 1.7em;
+}
+
+.service-card p {
+    color: var(--blue);
+    font-size: var(--fs-sm);
+    font-weight: normal;
+    max-width: 200px;
+    margin-inline: auto;
+}
+
+/*------------------------------- OUR RESULTS SECTION STYLES ------------------------------- */
+.our-results {
+    background-image: url(./assets/headphones_hero_2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.our-results__title,
+.our-results__text {
+    color: var(--white);
+}
+
+.our-results__text {
+    width: 80%;
+    margin-top: 40px;
+    margin-bottom: 56px;
+}
+
+.results-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+.result-card {
+    position: relative;
+}
+
+.result-card img {
+    width: 190px;
+}
+
+.result-card__text {
+    text-align: center;
+    color: var(--white);
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    z-index: 3;
+}
+
+.result-card__text h3 {
+    font-size: var(--fs-xl);
+}
+
+.result-card__text p {
+    font-size: var(--fs-sm);
+}
+
+/*------------------------------- CONTACT US SECTION STYLES ------------------------------- */
+.contact-us__form {
+    max-width: 335px;
+    margin-inline: auto;
+}
+
+.contact-us__title {
+    margin: 0;
+}
+
+.input-wrapper {
+    border-bottom: 1px solid var(--light-grey);
+    margin-top: 45px;
+}
+
+.input-wrapper:first-of-type {
+    margin-top: 30px;
+}
+
+.input-wrapper label {
+    color: var(--blue);
+    font-size: var(--fs-sm);
+}
+
+.input-wrapper input {
+    border: none;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.submit-btn-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/*------------------------------- FOOTER STYLES ------------------------------- */
+.footer {
+    background-color: var(--blue);
+    min-height: 12rem;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__info {
+    width: 80%;
+    text-align: center;
+}
+
+.footer__info__logo {
+    width: 35%;
+}
+
+.footer__info__social-links img {
+    width: 16px;
+    cursor: pointer;
+    margin-top: 0.85rem;
+    margin-right: 0.85rem;
+}
+
+.footer__text {
+    color: var(--light-grey);
+    font-size: var(--fs-sm);
+}
+
+/*------------------------------- RESPONSIVE DESIGN------------------------------- */
+@media (min-width: 500px) {
+    .footer__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer__info__logo {
+        width: 20%;
+    }
+
+    .footer__info__social-links img {
+        width: 30px;
+    }
+}
+
+@media (max-width:480px) {
+    .leading{
+        background-position: 35%;
+    }
+
+    .header label {
+        display: block;
+        color: var(--white);
+    }
+
+    .header__nav {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s ease-in-out
+    }
+
+    #toggler:checked~.header__nav {
+        height: 100%;
+    }
+
+    .header__nav__list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .results-container{
+        gap:30px;
+    }
+
+}
