@@ -392,7 +392,6 @@ section h2 {
     }
 
     .header__nav__list {
-        margin-top: 10px;
         flex-direction: column;
         gap: 10px;
     }
